@@ -1,0 +1,60 @@
+package app;
+
+//import java.util.Scanner;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static app.Probleme.*;
+public class Main {
+    public static void main(String[] args) {
+        int[]a={1,2,3,4,5};
+//        System.out.println(fact(6));
+//       // Scanner scanner=new Scanner(System.in);
+//        //int[]a=new int[5];
+//        //for(int i=0;i<a.length;i++){
+//          //  a[i]=scanner.nextInt();
+//
+//        //System.out.println(celMaiMare(a));
+//
+//        System.out.println(isPrime(12));
+//        System.out.println(isPalindrome("racecar"));
+//
+//
+//        int[]v={1,5,11,12,13,17};
+//        System.out.println(sumaNrPrime(v));
+        //suma2(12,13);
+
+//        List<Integer>list=new ArrayList<>();
+//        list.add(5);
+//        list.add(4);
+//        list.add(1000);
+
+//        afisare(a);
+//        System.out.println(numberOfEmployeesWhoMetTarget(a,1));
+//        String[]cuvinte={"mere","pere","banane","plapuma"};
+//        afisare2(cuvinte,'e');
+//        int[][] matrice = {
+//                {1, 2, 3},
+//                {4, 5, 6},
+//                {7, 8, 9}
+//        };
+//        System.out.println(maximumWealth(matrice));
+
+       // afisareVector(a);
+        //leftRightDifference(a);
+        //afis(a);
+        //containsDuplicate(a);
+       // af(a);
+       // System.out.println(truncateSentence("ana are mere si banane foarte multe",4));
+        System.out.println(missingNumber(a));
+
+//
+
+
+
+
+
+
+    }
+}
