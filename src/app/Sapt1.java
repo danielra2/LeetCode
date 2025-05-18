@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Probleme {
+import static java.lang.Math.abs;
+
+public class Sapt1 {
 
     public List<Boolean>kidsWithCandies(int[]vector,int n){
         int max=-1;
@@ -249,7 +251,7 @@ public class Probleme {
             int sumaDreapta=sumaIntre2Indecsi(nums,i+1,nums.length-1);
             leftSum[i]=sumaStanga;
             rightSum[i]=sumaDreapta;
-            rezultat[i]=Math.abs(leftSum[i]-rightSum[i]);
+            rezultat[i]= abs(leftSum[i]-rightSum[i]);
         }
         return rezultat;
 
@@ -428,7 +430,68 @@ public class Probleme {
                 return i;
             }
         }
-        return -1;
+       return nums.length;
+
+    }
+    //todo:349:intersection of arrays
+
+
+
+
+
+    //todo:third maximum
+
+    public static int thirdMax(int[] nums) {
+        Arrays.sort(nums);
+        List<Integer>list=new ArrayList<>();
+        for(int i=0;i<nums.length;i++){
+            if(!list.contains(nums[i])){
+                list.add(nums[i]);
+            }
+        }
+        if(list.size()<3){
+            return list.get(list.size()-1);
+        }
+        return list.get(list.size()-3);
+
+    }
+
+    //todo:numerele lipsa din vector
+
+    public static List<Integer> findDisappearedNumbers(int[] nums) {
+        Arrays.sort(nums);
+        List<Integer>list=new ArrayList<>();
+        for(int i=1;i<=nums.length;i++){
+            if(nums[i]!=i){
+                list.add(i);
+            }
+        }
+        return list;
+
+    }
+
+    //todo:3110:score of a string
+
+    public static int scoreOfString(String s) {
+        int sum=0;
+        for(int i=0;i<s.length()-1;i++){
+            sum+=abs((int)s.charAt(i)-(int)s.charAt(i+1));
+        }
+        return sum;
+
+    }
+    //todo:1108:defanging an ip address
+
+    public String defangIPaddr(String address) {
+        return address.replaceAll("\\.","[.]");
+
+    }
+
+    //todo: lungimea ultimului cuvant
+
+    public int lengthOfLastWord(String s) {
+        String[]cuvinte=s.split(" ");
+        return cuvinte[cuvinte.length-1].length();
 
     }
 

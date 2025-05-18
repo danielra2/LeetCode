@@ -2,13 +2,13 @@ package app;
 
 //import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static app.Probleme.*;
+import static app.Sapt1.*;
+import static app.sapt2.*;
+import static app.sapt3.*;
 public class Main {
     public static void main(String[] args) {
         int[]a={1,2,3,4,5};
+
 //        System.out.println(fact(6));
 //       // Scanner scanner=new Scanner(System.in);
 //        //int[]a=new int[5];
@@ -47,7 +47,17 @@ public class Main {
         //containsDuplicate(a);
        // af(a);
        // System.out.println(truncateSentence("ana are mere si banane foarte multe",4));
-        System.out.println(missingNumber(a));
+        //System.out.println(missingNumber(a));
+        //System.out.println(thirdMax(a));
+        //System.out.println(findDisappearedNumbers(a));
+        //System.out.println(scoreOfString("zaz"));
+
+       // System.out.println(minOperations(a,5));
+       // System.out.println(maxProductDifference(a));
+        //System.out.println(reversePrefix("banana",'n'));
+        System.out.println(isPalindrome("racecar"));
+
+
 
 //
 
