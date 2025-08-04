@@ -5,9 +5,10 @@ package app;
 import static app.Sapt1.*;
 import static app.sapt2.*;
 import static app.sapt3.*;
+import static app.Sapt4.*;
 public class Main {
     public static void main(String[] args) {
-        int[]a={1,2,3,4,5};
+        int[]a={-5, 1, 5, 0, -7};
 
 //        System.out.println(fact(6));
 //       // Scanner scanner=new Scanner(System.in);
@@ -55,7 +56,23 @@ public class Main {
        // System.out.println(minOperations(a,5));
        // System.out.println(maxProductDifference(a));
         //System.out.println(reversePrefix("banana",'n'));
-        System.out.println(isPalindrome("racecar"));
+        //System.out.println(isPalindrome("racecar"));
+       // System.out.println(cateCuvinte(""));
+
+        String s = "code";
+        int[] indices = {3, 1, 2, 0};
+
+        String shuffled = restoreString(s, indices);
+        System.out.println(shuffled);
+
+        String[] words1 = {"pay","attention","practice","attend"};
+        String pref1 = "at";
+        System.out.println(prefixCount(words1, pref1));
+        System.out.println(largestAltitude(a));
+        String[] patterns = {"a","abc","bc","d"};
+        String word = "abc";
+
+        System.out.println(numOfStrings(patterns, word));
 
 
 

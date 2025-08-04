@@ -339,4 +339,8 @@ return searchedWord;
         return newWord;
 
     }
+    public static int cateCuvinte(String text){
+        String[]prop=text.split(" ");
+        return prop.length;
+    }
 }
